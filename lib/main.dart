@@ -8,11 +8,6 @@ void main() async {
   await Firebase.initializeApp();
 
   runApp(MyApp());
-  /* FirebaseFirestore.instance.collection("mensagens").snapshots().listen((dado) {
-    dado.docs.forEach((d) {
-      print(d.data());
-    });
-  });*/
 }
 
 class MyApp extends StatelessWidget {
